@@ -1,20 +1,34 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { PaperProvider, Text } from 'react-native-paper';
+import UnoSiUnoNoScreen from './rzr-ritmo/screens/UnoSiUnoNoScreen';
+import { theme } from './theme';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <View style={styles.container}>
+
+        <UnoSiUnoNoScreen />
+        <StatusBar style="auto" />
+      </View>
+    </SafeAreaView>
+  );
+}
+
+export default function Main() {
+  return (
+    <PaperProvider theme={theme}>
+      <App />
+    </PaperProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#0ff',
+    width: '100%',
+    height: '100%',
   },
 });
