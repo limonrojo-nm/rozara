@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   content: {
-    gap: 20,
+    gap: 60,
     justifyContent: 'center',
 
   },

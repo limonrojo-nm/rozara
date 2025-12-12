@@ -13,7 +13,7 @@ const Title = ({ children, ...props }: T_Props) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 25,
+    fontSize: 40,
     fontWeight: 'bold'
   }
 })

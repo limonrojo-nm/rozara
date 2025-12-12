@@ -4,15 +4,19 @@ import { PaperProvider, Text } from 'react-native-paper';
 import UnoSiUnoNoScreen from './rzr-ritmo/screens/UnoSiUnoNoScreen';
 import { theme } from './theme';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Keyboard, TouchableWithoutFeedback } from 'react-native';
 
 function App() {
   return (
     <SafeAreaView>
-      <View style={styles.container}>
+      <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
 
-        <UnoSiUnoNoScreen />
-        <StatusBar style="auto" />
-      </View>
+        <View style={styles.container}>
+
+          <UnoSiUnoNoScreen />
+          <StatusBar style="auto" />
+        </View>
+      </TouchableWithoutFeedback>
     </SafeAreaView>
   );
 }
