@@ -28,7 +28,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "6a935d73-9073-4619-bccd-3b40fc2d5fe9"
+        "projectId": "2fa933de-2a9c-4202-a3b3-6d601778714d"
       }
     },
     "owner": "limonrojo",
@@ -36,7 +36,7 @@
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/6a935d73-9073-4619-bccd-3b40fc2d5fe9"
+      "url": "https://u.expo.dev/2fa933de-2a9c-4202-a3b3-6d601778714d"
     }
   }
 }
